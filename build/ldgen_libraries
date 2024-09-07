@@ -62,4 +62,5 @@ D:/project/esp/ESP32_MQTT/build/esp-idf/perfmon/libperfmon.a
 D:/project/esp/ESP32_MQTT/build/esp-idf/spiffs/libspiffs.a
 D:/project/esp/ESP32_MQTT/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
 D:/project/esp/ESP32_MQTT/build/esp-idf/main/libmain.a
+D:/project/esp/ESP32_MQTT/build/esp-idf/esp-aws-iot/libesp-aws-iot.a
 D:/project/esp/ESP32_MQTT/build/esp-idf/connect/libconnect.a
