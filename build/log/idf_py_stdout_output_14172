@@ -1,0 +1,655 @@
+45) wifi:IniHh�ښ�j%�(695) phy_ini�ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.2-beta1-263-ge49823f10c-dirt 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Sep  7 2024 14:31:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25674h (153204) map[0m
+[0;32mI (157) esp_image: segment 1: paddr=0003569c vaddr=3ffb0000 size=03cd4h ( 15572) load[0m
+[0;32mI (163) esp_image: segment 2: paddr=00039378 vaddr=40080000 size=06ca0h ( 27808) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=933a4h (603044) map[0m
+[0;32mI (381) esp_image: segment 4: paddr=000d33cc vaddr=40086ca0 size=0f9f0h ( 63984) load[0m
+[0;32mI (417) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (417) boot: Disabling RNG early entropy source...[0m
+[0;32mI (429) cpu_start: Multicore app[0m
+[0;32mI (438) cpu_start: Pro cpu start user code[0m
+[0;32mI (438) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (438) cpu_start: Application information:[0m
+[0;32mI (441) cpu_start: Project name:     ESP32_MQTT[0m
+[0;32mI (446) cpu_start: App version:      22a5a2f-dirty[0m
+[0;32mI (451) cpu_start: Compile time:     Sep  7 2024 20:07:04[0m
+[0;32mI (457) cpu_start: ELF file SHA256:  917379e98...[0m
+[0;32mI (463) cpu_start: ESP-IDF:          v5.2-beta1-263-ge49823f10c-dirt[0m
+[0;32mI (470) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (475) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (479) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (484) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (491) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (497) heap_init: At 3FFB83F0 len 00027C10 (159 KiB): DRAM[0m
+[0;32mI (504) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (510) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (516) heap_init: At 40096690 len 00009970 (38 KiB): IRAM[0m
+[0;32mI (524) spi_flash: detected chip: generic[0m
+[0;32mI (527) spi_flash: flash io: dio[0m
+[0;33mW (531) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (545) main_task: Started on CPU0[0m
+[0;32mI (555) main_task: Calling app_main()[0m
+I (605) wifi:wifi driver task: 3ffc00bc, prio:23, stack:6656, core=0
+I (625) wifi:wifi firmware version: a75e5ea
+I (625) wifi:wifi certification version: v7.0
+I (625) wifi:config NVS flash: enabled
+I (625) wifi:config nano formating: disabled
+I (625) wifi:Init data frame dynamic rx buffer num: 32
+I (635) wifi:Init static rx mgmt buffer num: 5
+I (635) wifi:Init management short buffer num: 32
+I (645) wifi:Init dynamic tx buffer num: 32
+I (645) wifi:Init static rx buffer size: 1600
+I (645) wifi:Init static rx buffer num: 10
+I (655) wifi:Init dynamic rx buffer num: 32
+[0;32mI (655) wifi_init: rx ba win: 6[0m
+[0;32mI (655) wifi_init: tcpip mbox: 32[0m
+[0;32mI (665) wifi_init: udp mbox: 6[0m
+[0;32mI (665) wifi_init: tcp mbox: 6[0m
+[0;32mI (675) wifi_init: tcp tx win: 5760[0m
+[0;32mI (675) wifi_init: tcp rx win: 5760[0m
+[0;32mI (675) wifi_init: tcp mss: 1440[0m
+[0;32mI (685) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (685) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (695) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (785) wifi:mode : sta (0c:b8:15:c2:30:b0)
+I (785) wifi:enable tsf
+[0;32mI (785) WIFI: connecting...[0m
+I (835) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (1085) wifi:state: init -> auth (b0)
+I (2085) wifi:state: auth -> init (200)
+I (2085) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;31mE (2085) WIFI: disconnected: WIFI_REASON_AUTH_EXPIRE[0m
+[0;31mE (4505) WIFI: disconnected: WIFI_REASON_CONNECTION_FAIL[0m
+I (4515) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (4515) wifi:state: init -> auth (b0)
+I (4525) wifi:state: auth -> assoc (0)
+I (4535) wifi:state: assoc -> run (10)
+I (4545) wifi:connected with SSK, aid = 7, channel 1, BW20, bssid = fa:ac:65:a8:d4:0a
+I (4545) wifi:security: WPA2-PSK, phy: bgn, rssi: -42
+I (4545) wifi:pm start, type: 1
+
+I (4545) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+[0;32mI (4555) WIFI: connected[0m
+I (4615) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+[0;32mI (5555) WIFI: GOT IP[0m
+[0;32mI (5555) esp_netif_handlers: sta ip: 192.168.137.178, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (5555) main_task: Returned from app_main()[0m
+[0;32mI (5555) aws_iot: AWS IoT SDK Version 3.0.1-[0m
+[0;32mI (5565) aws_iot: Connecting to AWS...[0m
+I (7795) wifi:<ba-add>idx:0 (ifx:0, fa:ac:65:a8:d4:0a), tid:0, ssn:18, winSize:64
+[0;32mI (8915) aws_iot: Subscribing...[0m
+[0;32mI (9445) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (10875) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 0 [0m
+[0;32mI (11175) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 1 [0m
+[0;32mI (11285) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (12405) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 2 [0m
+[0;32mI (12715) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 3 [0m
+[0;32mI (12825) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (14245) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 4 [0m
+[0;32mI (14555) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 5 [0m
+[0;32mI (14675) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (16095) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 6 [0m
+[0;32mI (16195) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 7 [0m
+[0;32mI (16295) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (17625) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 8 [0m
+[0;32mI (17935) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 9 [0m
+[0;32mI (18055) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (19475) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 10 [0m
+[0;32mI (19785) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 11 [0m
+[0;32mI (19885) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (21315) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 12 [0m
+[0;32mI (21625) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 13 [0m
+[0;32mI (21735) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (22845) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 14 [0m
+[0;32mI (23165) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 15 [0m
+[0;32mI (23265) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (24695) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 16 [0m
+[0;32mI (25005) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 17 [0m
+[0;32mI (25115) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (26535) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 18 [0m
+[0;32mI (26845) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 19 [0m
+[0;32mI (26955) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (28065) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 20 [0m
+[0;32mI (28175) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 21 [0m
+[0;32mI (28285) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (29395) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 22 [0m
+[0;32mI (29615) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 23 [0m
+[0;32mI (29715) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (31145) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 24 [0m
+[0;32mI (31455) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 25 [0m
+[0;32mI (31565) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (32985) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 26 [0m
+[0;32mI (33295) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 27 [0m
+[0;32mI (33405) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (34515) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 28 [0m
+[0;32mI (34835) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 29 [0m
+[0;32mI (34945) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (36365) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 30 [0m
+[0;32mI (36465) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 31 [0m
+[0;32mI (36575) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (37905) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 32 [0m
+[0;32mI (38215) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 33 [0m
+[0;32mI (38325) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (39435) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 34 [0m
+[0;32mI (39745) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 35 [0m
+[0;32mI (39855) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (41285) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 36 [0m
+[0;32mI (41595) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 37 [0m
+[0;32mI (41705) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (43125) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 38 [0m
+[0;32mI (43435) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 39 [0m
+[0;32mI (43545) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (44975) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 40 [0m
+[0;32mI (45275) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 41 [0m
+[0;32mI (45385) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (46815) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 42 [0m
+[0;32mI (46915) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 43 [0m
+[0;32mI (47015) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (48345) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 44 [0m
+[0;32mI (48655) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 45 [0m
+[0;32mI (48775) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (50195) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 46 [0m
+[0;32mI (50505) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 47 [0m
+[0;32mI (50605) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (52045) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 48 [0m
+[0;32mI (52345) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 49 [0m
+[0;32mI (52465) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (53875) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 50 [0m
+[0;32mI (54185) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 51 [0m
+[0;32mI (54305) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (55725) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 52 [0m
+[0;32mI (56035) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 53 [0m
+[0;32mI (56135) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (57565) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 54 [0m
+[0;32mI (57665) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 55 [0m
+[0;32mI (57775) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (58895) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 56 [0m
+[0;32mI (59105) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 57 [0m
+[0;32mI (59215) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (60635) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 58 [0m
+[0;32mI (60735) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 59 [0m
+[0;32mI (60845) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (62175) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 60 [0m
+[0;32mI (62485) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 61 [0m
+[0;32mI (62595) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (63705) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 62 [0m
+[0;32mI (63805) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 63 [0m
+[0;32mI (63925) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (65245) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 64 [0m
+[0;32mI (65555) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 65 [0m
+[0;32mI (65665) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (66775) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 66 [0m
+[0;32mI (66885) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 67 [0m
+[0;32mI (66985) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (68105) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 68 [0m
+[0;32mI (68325) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 69 [0m
+[0;32mI (68425) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (69545) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 70 [0m
+[0;32mI (69645) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 71 [0m
+[0;32mI (69755) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (71085) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 72 [0m
+[0;32mI (71395) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 73 [0m
+[0;32mI (71505) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (72925) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 74 [0m
+[0;32mI (73025) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 75 [0m
+[0;32mI (73125) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (74465) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 76 [0m
+[0;32mI (74555) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 77 [0m
+[0;32mI (74665) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (75995) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 78 [0m
+[0;32mI (76095) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 79 [0m
+[0;32mI (76205) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (77325) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 80 [0m
+[0;32mI (77425) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 81 [0m
+[0;32mI (77535) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (78655) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 82 [0m
+[0;32mI (78765) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 83 [0m
+[0;32mI (78875) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (79995) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 84 [0m
+[0;32mI (80305) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 85 [0m
+[0;32mI (80405) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (81835) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 86 [0m
+[0;32mI (82145) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 87 [0m
+[0;32mI (82255) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (83365) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 88 [0m
+[0;32mI (83685) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 89 [0m
+[0;32mI (83785) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (84905) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 90 [0m
+[0;32mI (85215) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 91 [0m
+[0;32mI (85325) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (86445) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 92 [0m
+[0;32mI (86755) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 93 [0m
+[0;32mI (86865) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (87975) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 94 [0m
+[0;32mI (88075) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 95 [0m
+[0;32mI (88185) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (89305) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 96 [0m
+[0;32mI (89415) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 97 [0m
+[0;32mI (89525) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (90745) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 98 [0m
+[0;32mI (91055) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 99 [0m
+[0;32mI (91165) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (92275) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 100 [0m
+[0;32mI (92375) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 101 [0m
+[0;32mI (92495) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (93605) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 102 [0m
+[0;32mI (93815) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 103 [0m
+[0;32mI (93935) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (95035) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 104 [0m
+[0;32mI (95145) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 105 [0m
+[0;32mI (95255) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (96365) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 106 [0m
+[0;32mI (96475) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 107 [0m
+[0;32mI (96585) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (97815) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 108 [0m
+[0;32mI (98115) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 109 [0m
+[0;32mI (98225) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (99655) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 110 [0m
+[0;32mI (99965) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 111 [0m
+[0;32mI (100075) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (101185) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 112 [0m
+[0;32mI (101495) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 113 [0m
+[0;32mI (101605) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (102725) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 114 [0m
+[0;32mI (103035) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 115 [0m
+[0;32mI (103145) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (104255) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 116 [0m
+[0;32mI (104575) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 117 [0m
+[0;32mI (104675) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (106105) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 118 [0m
+[0;32mI (106415) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 119 [0m
+[0;32mI (106525) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (107645) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 120 [0m
+[0;32mI (107955) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 121 [0m
+[0;32mI (108055) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (109175) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 122 [0m
+[0;32mI (109275) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 123 [0m
+[0;32mI (109385) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (110715) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 124 [0m
+[0;32mI (110815) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 125 [0m
+[0;32mI (110915) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (112245) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 126 [0m
+[0;32mI (112345) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 127 [0m
+[0;32mI (112455) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (113785) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 128 [0m
+[0;32mI (113885) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 129 [0m
+[0;32mI (113985) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (115115) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 130 [0m
+[0;32mI (115225) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 131 [0m
+[0;32mI (115315) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (116555) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 132 [0m
+[0;32mI (116855) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 133 [0m
+[0;32mI (116975) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (118095) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 134 [0m
+[0;32mI (118185) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 135 [0m
+[0;32mI (118295) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (119625) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 136 [0m
+[0;32mI (119715) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 137 [0m
+[0;32mI (119835) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (122775) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 138 [0m
+[0;32mI (123005) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 139 [0m
+[0;32mI (123105) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (124235) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 140 [0m
+[0;32mI (124425) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 141 [0m
+[0;32mI (124535) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (125765) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 142 [0m
+[0;32mI (126075) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 143 [0m
+[0;32mI (126185) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+I (126375) wifi:<ba-del>idx:0, tid:0
+I (126375) wifi:<ba-add>idx:0 (ifx:0, fa:ac:65:a8:d4:0a), tid:0, ssn:256, winSize:64
+[0;32mI (127305) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 144 [0m
+[0;32mI (127615) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 145 [0m
+[0;32mI (127725) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (128835) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 146 [0m
+[0;32mI (129145) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 147 [0m
+[0;32mI (129255) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (130375) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 148 [0m
+[0;32mI (130465) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 149 [0m
+[0;32mI (130575) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (131915) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 150 [0m
+[0;32mI (132225) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 151 [0m
+[0;32mI (132325) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (133445) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 152 [0m
+[0;32mI (133755) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 153 [0m
+[0;32mI (133865) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (134985) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 154 [0m
+[0;32mI (135295) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 155 [0m
+[0;32mI (135395) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (136515) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 156 [0m
+[0;32mI (136825) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 157 [0m
+[0;32mI (136935) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (138055) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 158 [0m
+[0;32mI (138145) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 159 [0m
+[0;32mI (138255) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (139595) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 160 [0m
+[0;32mI (139595) aws_iot: Subscribe callback Test: test_topic/esp32	{
+  "message": "Hello from AWS IoT console"
+}[0m
+[0;32mI (139905) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 161 [0m
+[0;32mI (140005) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (141125) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 162 [0m
+[0;32mI (141215) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 163 [0m
+[0;32mI (141325) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (142665) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 164 [0m
+[0;32mI (142975) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 165 [0m
+[0;32mI (143085) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (144195) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 166 [0m
+[0;32mI (144505) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 167 [0m
+[0;32mI (144615) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (145735) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 168 [0m
+[0;32mI (145825) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 169 [0m
+[0;32mI (145935) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (147275) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 170 [0m
+[0;32mI (147355) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 171 [0m
+[0;32mI (147455) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (148815) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 172 [0m
+[0;32mI (149115) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 173 [0m
+[0;32mI (149225) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (150325) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 174 [0m
+[0;32mI (150655) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 175 [0m
+[0;32mI (150765) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (151875) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 176 [0m
+[0;32mI (152185) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 177 [0m
+[0;32mI (152305) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (153415) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 178 [0m
+[0;32mI (153505) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 179 [0m
+[0;32mI (153615) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (154955) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 180 [0m
+[0;32mI (155035) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 181 [0m
+[0;32mI (155145) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (156485) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 182 [0m
+[0;32mI (156795) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 183 [0m
+[0;32mI (156905) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (158025) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 184 [0m
+[0;32mI (158115) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 185 [0m
+[0;32mI (158215) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (159565) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 186 [0m
+[0;32mI (159665) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 187 [0m
+[0;32mI (159785) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (161095) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 188 [0m
+[0;32mI (161405) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 189 [0m
+[0;32mI (161515) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (162615) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 190 [0m
+[0;32mI (162945) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 191 [0m
+[0;32mI (163045) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (164165) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 192 [0m
+[0;32mI (164475) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 193 [0m
+[0;32mI (164585) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (165705) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 194 [0m
+[0;32mI (166015) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 195 [0m
+[0;32mI (166125) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (167235) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 196 [0m
+[0;32mI (167325) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 197 [0m
+[0;32mI (167435) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (168775) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 198 [0m
+[0;32mI (169085) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 199 [0m
+[0;32mI (169195) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (170315) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 200 [0m
+[0;32mI (170625) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 201 [0m
+[0;32mI (170725) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (171845) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 202 [0m
+[0;32mI (171945) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 203 [0m
+[0;32mI (172055) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (173385) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 204 [0m
+[0;32mI (173695) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 205 [0m
+[0;32mI (173805) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (174915) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 206 [0m
+[0;32mI (175225) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 207 [0m
+[0;32mI (175345) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (176445) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 208 [0m
+[0;32mI (176765) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 209 [0m
+[0;32mI (176875) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (177995) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 210 [0m
+[0;32mI (178305) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 211 [0m
+[0;32mI (178405) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (179525) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 212 [0m
+[0;32mI (179835) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 213 [0m
+[0;32mI (179945) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (181045) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 214 [0m
+[0;32mI (181375) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 215 [0m
+[0;32mI (181485) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (182585) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 216 [0m
+[0;32mI (182685) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 217 [0m
+[0;32mI (182805) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (184135) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 218 [0m
+[0;32mI (184445) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 219 [0m
+[0;32mI (184555) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (185675) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 220 [0m
+[0;32mI (185985) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 221 [0m
+[0;32mI (186085) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (187205) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 222 [0m
+[0;32mI (187515) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 223 [0m
+[0;32mI (187625) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (188745) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 224 [0m
+[0;32mI (189055) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 225 [0m
+[0;32mI (189165) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (190275) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 226 [0m
+[0;32mI (190585) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 227 [0m
+[0;32mI (190695) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (191815) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 228 [0m
+[0;32mI (192125) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 229 [0m
+[0;32mI (192235) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (193335) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 230 [0m
+[0;32mI (193665) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 231 [0m
+[0;32mI (193775) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (194885) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 232 [0m
+[0;32mI (195195) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 233 [0m
+[0;32mI (195305) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (196425) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 234 [0m
+[0;32mI (196735) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 235 [0m
+[0;32mI (196845) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (197855) aws_iot: Subscribe callback Test: test_topic/esp32	{
+  "message": "Hello from AWS IoT console"
+}[0m
+[0;32mI (197965) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 236 [0m
+[0;32mI (198265) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 237 [0m
+[0;32mI (198375) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (199495) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 238 [0m
+[0;32mI (199805) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 239 [0m
+[0;32mI (199915) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (201035) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 240 [0m
+[0;32mI (201345) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 241 [0m
+[0;32mI (201445) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (202455) aws_iot: Subscribe callback Test: test_topic/esp32	{
+  "message": "Hello from AWS IoT console"
+}[0m
+[0;32mI (202565) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 242 [0m
+[0;32mI (202875) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 243 [0m
+[0;32mI (202985) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (204105) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 244 [0m
+[0;32mI (204415) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 245 [0m
+[0;32mI (204525) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (205645) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 246 [0m
+[0;32mI (205725) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 247 [0m
+[0;32mI (205845) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (207175) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 248 [0m
+[0;32mI (207485) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 249 [0m
+[0;32mI (207595) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (208715) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 250 [0m
+[0;32mI (209025) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 251 [0m
+[0;32mI (209025) aws_iot: Subscribe callback Test: test_topic/esp32	{
+  "message": "Hello from AWS IoT console"
+}[0m
+[0;32mI (209135) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (210245) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 252 [0m
+[0;32mI (210555) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 253 [0m
+[0;32mI (210675) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (211785) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 254 [0m
+[0;32mI (212095) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 255 [0m
+[0;32mI (212205) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (213325) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 256 [0m
+[0;32mI (213425) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 257 [0m
+[0;32mI (213535) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (214635) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 258 [0m
+[0;32mI (214855) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 259 [0m
+[0;32mI (214975) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (216065) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 260 [0m
+[0;32mI (216395) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 261 [0m
+[0;32mI (216505) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (217625) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 262 [0m
+[0;32mI (217705) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 263 [0m
+[0;32mI (217815) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (219155) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 264 [0m
+[0;32mI (219465) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 265 [0m
+[0;32mI (219575) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (220695) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 266 [0m
+[0;32mI (220925) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 267 [0m
+[0;32mI (221025) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+[0;32mI (222115) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 268 [0m
+[0;32mI (226225) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 269 [0m
+[0;32mI (226335) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+I (227445) wifi:<ba-del>idx:0, tid:0
+I (227455) wifi:<ba-add>idx:0 (ifx:0, fa:ac:65:a8:d4:0a), tid:0, ssn:474, winSize:64
+[0;32mI (227455) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS0) : 270 [0m
+[0;32mI (227765) aws_iot: Subscribe callback Test: test_topic/esp32	hello from ESP32 (QOS1) : 271 [0m
+[0;32mI (227875) aws_iot: Stack remaining for task 'aws_iot_task' is 3328 bytes[0m
+I (228675) wifi:state: run -> init (c0)
+I (228675) wifi:pm stop, total sleep time: 176763130 us / 224132360 us
+
+I (228675) wifi:<ba-del>idx:0, tid:0
+I (228675) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;31mE (228685) WIFI: disconnected: WIFI_REASON_UNSPECIFIED[0m
+[0;31mE (228875) aws_iot:  failed
+  ! mbedtls_ssl_write returned -0x4e[0m
+[0;31mE (228875) aws_iot:  failed
+  ! mbedtls_ssl_write returned -0x4e[0m
+[0;31mE (228875) aws_iot: An error occurred in the main loop.[0m
+
+abort() was called at PC 0x400d6e5b on core 1
+
+
+Backtrace: 0x400817d2:0x3ffc88b0 0x400890b5:0x3ffc88d0 0x400908a9:0x3ffc88f0 0x400d6e5b:0x3ffc8960 0x40089bc1:0x3ffc9690
+
+
+
+
+ELF file SHA256: 917379e98
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.2-beta1-263-ge49823f10c-dirt 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Sep  7 2024 14:31:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25674h (153204) map[0m
+[0;32mI (157) esp_image: segment 1: paddr=0003569c vaddr=3ffb0000 size=03cd4h ( 15572) load[0m
+[0;32mI (163) esp_image: segment 2: paddr=00039378 vaddr=40080000 size=06ca0h ( 27808) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=933a4h (603044) map[0m
+[0;32mI (381) esp_image: segment 4: paddr=000d33cc vaddr=40086ca0 size=0f9f0h ( 63984) load[0m
+[0;32mI (417) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (418) boot: Disabling RNG early entropy source...[0m
+[0;32mI (429) cpu_start: Multicore app[0m
+[0;32mI (438) cpu_start: Pro cpu start user code[0m
+[0;32mI (438) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (438) cpu_start: Application information:[0m
+[0;32mI (441) cpu_start: Project name:     ESP32_MQTT[0m
+[0;32mI (446) cpu_start: App version:      22a5a2f-dirty[0m
+[0;32mI (452) cpu_start: Compile time:     Sep  7 2024 20:07:04[0m
+[0;32mI (458) cpu_start: ELF file SHA256:  917379e98...[0m
+[0;32mI (463) cpu_start: ESP-IDF:          v5.2-beta1-263-ge49823f10c-dirt[0m
+[0;32mI (470) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (475) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (480) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (485) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (492) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (498) heap_init: At 3FFB83F0 len 00027C10 (159 KiB): DRAM[0m
+[0;32mI (504) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (510) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (517) heap_init: At 40096690 len 00009970 (38 KiB): IRAM[0m
+[0;32mI (524) spi_flash: detected chip: generic[0m
+[0;32mI (527) spi_flash: flash io: dio[0m
+[0;33mW (531) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (545) main_task: Started on CPU0[0m
+[0;32mI (555) main_task: Calling app_main()[0m
+I (605) wifi:wifi driver task: 3ffc00bc, prio:23, stack:6656, core=0
+I (625) wifi:wifi firmware version: a75e5ea
+I (625) wifi:wifi certification version: v7.0
+I (625) wifi:config NVS flash: enabled
+I (625) wifi:config nano formating: disabled
+I (625) wifi:Init data frame dynamic rx buffer num: 32
+I (635) wifi:Init static rx mgmt buffer num: 5
+I (635) wifi:Init management short buffer num: 32
+I (645) wifi:Init dynamic tx buffer num: 32
+I (645) wifi:Init static rx buffer size: 1600
+I (645) wifi:Init static rx buffer num: 10
+I (655) wifi:Init dynamic rx buffer num: 32
+[0;32mI (655) wifi_init: rx ba win: 6[0m
+[0;32mI (655) wifi_init: tcpip mbox: 32[0m
+[0;32mI (665) wifi_init: udp mbox: 6[0m
+[0;32mI (665) wifi_init: tcp mbox: 6[0m
+[0;32mI (675) wifi_init: tcp tx win: 5760[0m
+[0;32mI (675) wifi_init: tcp rx win: 5760[0m
+[0;32mI (675) wifi_init: tcp mss: 1440[0m
+[0;32mI (685) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (685) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (695) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (785) wifi:mode : sta (0c:b8:15:c2:30:b0)
+I (785) wifi:enable tsf
+[0;32mI (785) WIFI: connecting...[0m
+[0;31mE (3195) WIFI: disconnected: WIFI_REASON_NO_AP_FOUND[0m
+[0;31mE (5615) WIFI: disconnected: WIFI_REASON_NO_AP_FOUND[0m
+[0;31mE (8025) WIFI: disconnected: WIFI_REASON_NO_AP_FOUND[0m
+[0;31mE (10435) WIFI: disconnected: WIFI_REASON_NO_AP_FOUND[0m
+[0;32mI (10785) main_task: Returned from app_main()[0m
+[0;32mI (10785) aws_iot: AWS IoT SDK Version 3.0.1-[0m
+[0;32mI (10785) aws_iot: Connecting to AWS...[0m
+[0;31mE (10805) aws_iot: failed! mbedtls_net_connect returned -0x52[0m
+[0;31mE (10805) aws_iot: Error(-23) connecting to a2dyd1e7ytera7-ats.iot.ap-south-1.amazonaws.com:8883[0m
+[0;31mE (11815) aws_iot: failed! mbedtls_net_connect returned -0x52[0m
+[0;31mE (11815) aws_iot: Error(-23) connecting to a2dyd1e7ytera7-ats.iot.ap-south-1.amazonaws.com:8883[0m
+[0;31mE (12835) aws_iot: failed! mbedtls_net_connect returned -0x52[0m
+[0;31mE (12835) aws_iot: Error(-23) connecting to a2dyd1e7ytera7-ats.iot.ap-south-1.amazonaws.com:8883[0m
+[0;31mE (12855) WIFI: disconnected: WIFI_REASON_NO_AP_FOUND[0m
+[0;31mE (13855) aws_iot: failed! mbedtls_net_connect returned -0x52[0m
+[0;31mE (13855) aws_iot: Error(-23) connecting to a2dyd1e7ytera7-ats.iot.ap-south-1.amazonaws.com:8883[0m
+[0;31mE (14875) aws_iot: failed! mbedtls_net_connect returned -0x52[0m
+[0;31mE (14875) aws_iot: Error(-23) connecting to a2dyd1e7ytera7-ats.iot.ap-south-1.amazonaws.com:8883[0m
+[0;31mE (15265) WIFI: disconnected: WIFI_REASON_NO_AP_FOUND[0m
+[0;31mE (15895) aws_iot: failed! mbedtls_net_connect returned -0x52[0m
+[0;31mE (15895) aws_iot: Error(-23) connecting to a2dyd1e7ytera7-ats.iot.ap-south-1.amazonaws.com:8883[0m
+[0;31mE (16915) aws_iot: failed! mbedtls_net_connect returned -0x52[0m
+[0;31mE (16915) aws_iot: Error(-23) connecting to a2dyd1e7ytera7-ats.iot.ap-south-1.amazonaws.com:8883[0m

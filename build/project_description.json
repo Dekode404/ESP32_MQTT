@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "ESP32_MQTT",
-    "project_version":    "f128de2-dirty",
+    "project_version":    "22a5a2f-dirty",
     "project_path":       "D:/project/esp/ESP32_MQTT",
     "idf_path":           "C:/esp/idf/esp-idf",
     "build_dir":          "D:/project/esp/ESP32_MQTT/build",
@@ -835,7 +835,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "D:/project/esp/ESP32_MQTT/build/esp-idf/main/libmain.a",
-            "sources": [ "D:/project/esp/ESP32_MQTT/main/aws_iot.c", "D:/project/esp/ESP32_MQTT/main/main.c" ],
+            "sources": [ "D:/project/esp/ESP32_MQTT/main/aws_iot.c", "D:/project/esp/ESP32_MQTT/main/main.c", "D:/project/esp/ESP32_MQTT/build/aws_root_ca_pem.S", "D:/project/esp/ESP32_MQTT/build/certificate_pem_crt.S", "D:/project/esp/ESP32_MQTT/build/private_pem_key.S" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {

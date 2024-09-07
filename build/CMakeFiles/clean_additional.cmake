@@ -5,9 +5,11 @@ if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "")
   file(REMOVE_RECURSE
   "ESP32_MQTT.bin"
   "ESP32_MQTT.map"
+  "aws_root_ca_pem.S"
   "bootloader\\bootloader.bin"
   "bootloader\\bootloader.elf"
   "bootloader\\bootloader.map"
+  "certificate_pem_crt.S"
   "config\\sdkconfig.cmake"
   "config\\sdkconfig.h"
   "esp-idf\\esptool_py\\flasher_args.json.in"
@@ -18,6 +20,7 @@ if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "")
   "flasher_args.json"
   "ldgen_libraries"
   "ldgen_libraries.in"
+  "private_pem_key.S"
   "project_elf_src_esp32.c"
   "x509_crt_bundle.S"
   )

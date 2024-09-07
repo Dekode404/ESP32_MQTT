@@ -3,6 +3,7 @@
 #include "nvs_flash.h"
 #include "esp_err.h"
 
+#include "aws_iot.h"
 #include "connect.h" // This is manually added file for the wifi related functionality
 
 #define SSID "SSK"          // This SSID used for the setup the AP
@@ -16,4 +17,6 @@ void app_main(void)
     wifi_init(); // Initialize the WIFI.
 
     wifi_connect_sta(SSID, PASSWORD, WIFI_CONNECTION_TIMEOUT_10_SEC);
+
+    aws_iot_start();
 }
