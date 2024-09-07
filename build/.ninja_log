@@ -1950,3 +1950,5 @@
 116	363	7474215810437973	D:/project/esp/ESP32_MQTT/build/bootloader/bootloader.map	374e2bf0d94ac678
 363	18555	0	CMakeFiles/flash	dd921a1fd6fad55d
 363	18555	0	D:/project/esp/ESP32_MQTT/build/CMakeFiles/flash	dd921a1fd6fad55d
+77	4784760	0	CMakeFiles/confserver	91086fc685d1ae58
+77	4784760	0	D:/project/esp/ESP32_MQTT/build/CMakeFiles/confserver	91086fc685d1ae58
