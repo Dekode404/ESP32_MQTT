@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "ESP32_MQTT",
-    "project_version":    "1",
+    "project_version":    "2930997-dirty",
     "project_path":       "D:/project/esp/ESP32_MQTT",
     "idf_path":           "C:/esp/idf/esp-idf",
     "build_dir":          "D:/project/esp/ESP32_MQTT/build",
@@ -25,8 +25,8 @@
         "COMPONENT_KCONFIGS_PROJBUILD" : "C:/esp/idf/esp-idf/components/bootloader/Kconfig.projbuild;C:/esp/idf/esp-idf/components/esp_app_format/Kconfig.projbuild;C:/esp/idf/esp-idf/components/esp_rom/Kconfig.projbuild;C:/esp/idf/esp-idf/components/esptool_py/Kconfig.projbuild;C:/esp/idf/esp-idf/components/partition_table/Kconfig.projbuild"
     },
     "common_component_reqs": [ "cxx", "newlib", "freertos", "esp_hw_support", "heap", "log", "soc", "hal", "esp_rom", "esp_common", "esp_system", "xtensa" ],
-    "build_components" : [ "app_trace", "app_update", "bootloader", "bootloader_support", "bt", "cmock", "console", "cxx", "driver", "efuse", "esp-tls", "esp_adc", "esp_app_format", "esp_bootloader_format", "esp_coex", "esp_common", "esp_eth", "esp_event", "esp_gdbstub", "esp_hid", "esp_http_client", "esp_http_server", "esp_https_ota", "esp_https_server", "esp_hw_support", "esp_lcd", "esp_local_ctrl", "esp_mm", "esp_netif", "esp_netif_stack", "esp_partition", "esp_phy", "esp_pm", "esp_psram", "esp_ringbuf", "esp_rom", "esp_system", "esp_timer", "esp_wifi", "espcoredump", "esptool_py", "fatfs", "freertos", "hal", "heap", "http_parser", "idf_test", "ieee802154", "json", "log", "lwip", "main", "mbedtls", "mqtt", "newlib", "nvs_flash", "nvs_sec_provider", "openthread", "partition_table", "perfmon", "protobuf-c", "protocomm", "pthread", "sdmmc", "soc", "spi_flash", "spiffs", "tcp_transport", "ulp", "unity", "usb", "vfs", "wear_levelling", "wifi_provisioning", "wpa_supplicant", "xtensa", "" ],
-    "build_component_paths" : [ "C:/esp/idf/esp-idf/components/app_trace", "C:/esp/idf/esp-idf/components/app_update", "C:/esp/idf/esp-idf/components/bootloader", "C:/esp/idf/esp-idf/components/bootloader_support", "C:/esp/idf/esp-idf/components/bt", "C:/esp/idf/esp-idf/components/cmock", "C:/esp/idf/esp-idf/components/console", "C:/esp/idf/esp-idf/components/cxx", "C:/esp/idf/esp-idf/components/driver", "C:/esp/idf/esp-idf/components/efuse", "C:/esp/idf/esp-idf/components/esp-tls", "C:/esp/idf/esp-idf/components/esp_adc", "C:/esp/idf/esp-idf/components/esp_app_format", "C:/esp/idf/esp-idf/components/esp_bootloader_format", "C:/esp/idf/esp-idf/components/esp_coex", "C:/esp/idf/esp-idf/components/esp_common", "C:/esp/idf/esp-idf/components/esp_eth", "C:/esp/idf/esp-idf/components/esp_event", "C:/esp/idf/esp-idf/components/esp_gdbstub", "C:/esp/idf/esp-idf/components/esp_hid", "C:/esp/idf/esp-idf/components/esp_http_client", "C:/esp/idf/esp-idf/components/esp_http_server", "C:/esp/idf/esp-idf/components/esp_https_ota", "C:/esp/idf/esp-idf/components/esp_https_server", "C:/esp/idf/esp-idf/components/esp_hw_support", "C:/esp/idf/esp-idf/components/esp_lcd", "C:/esp/idf/esp-idf/components/esp_local_ctrl", "C:/esp/idf/esp-idf/components/esp_mm", "C:/esp/idf/esp-idf/components/esp_netif", "C:/esp/idf/esp-idf/components/esp_netif_stack", "C:/esp/idf/esp-idf/components/esp_partition", "C:/esp/idf/esp-idf/components/esp_phy", "C:/esp/idf/esp-idf/components/esp_pm", "C:/esp/idf/esp-idf/components/esp_psram", "C:/esp/idf/esp-idf/components/esp_ringbuf", "C:/esp/idf/esp-idf/components/esp_rom", "C:/esp/idf/esp-idf/components/esp_system", "C:/esp/idf/esp-idf/components/esp_timer", "C:/esp/idf/esp-idf/components/esp_wifi", "C:/esp/idf/esp-idf/components/espcoredump", "C:/esp/idf/esp-idf/components/esptool_py", "C:/esp/idf/esp-idf/components/fatfs", "C:/esp/idf/esp-idf/components/freertos", "C:/esp/idf/esp-idf/components/hal", "C:/esp/idf/esp-idf/components/heap", "C:/esp/idf/esp-idf/components/http_parser", "C:/esp/idf/esp-idf/components/idf_test", "C:/esp/idf/esp-idf/components/ieee802154", "C:/esp/idf/esp-idf/components/json", "C:/esp/idf/esp-idf/components/log", "C:/esp/idf/esp-idf/components/lwip", "D:/project/esp/ESP32_MQTT/main", "C:/esp/idf/esp-idf/components/mbedtls", "C:/esp/idf/esp-idf/components/mqtt", "C:/esp/idf/esp-idf/components/newlib", "C:/esp/idf/esp-idf/components/nvs_flash", "C:/esp/idf/esp-idf/components/nvs_sec_provider", "C:/esp/idf/esp-idf/components/openthread", "C:/esp/idf/esp-idf/components/partition_table", "C:/esp/idf/esp-idf/components/perfmon", "C:/esp/idf/esp-idf/components/protobuf-c", "C:/esp/idf/esp-idf/components/protocomm", "C:/esp/idf/esp-idf/components/pthread", "C:/esp/idf/esp-idf/components/sdmmc", "C:/esp/idf/esp-idf/components/soc", "C:/esp/idf/esp-idf/components/spi_flash", "C:/esp/idf/esp-idf/components/spiffs", "C:/esp/idf/esp-idf/components/tcp_transport", "C:/esp/idf/esp-idf/components/ulp", "C:/esp/idf/esp-idf/components/unity", "C:/esp/idf/esp-idf/components/usb", "C:/esp/idf/esp-idf/components/vfs", "C:/esp/idf/esp-idf/components/wear_levelling", "C:/esp/idf/esp-idf/components/wifi_provisioning", "C:/esp/idf/esp-idf/components/wpa_supplicant", "C:/esp/idf/esp-idf/components/xtensa", "" ],
+    "build_components" : [ "app_trace", "app_update", "bootloader", "bootloader_support", "bt", "cmock", "connect", "console", "cxx", "driver", "efuse", "esp-tls", "esp_adc", "esp_app_format", "esp_bootloader_format", "esp_coex", "esp_common", "esp_eth", "esp_event", "esp_gdbstub", "esp_hid", "esp_http_client", "esp_http_server", "esp_https_ota", "esp_https_server", "esp_hw_support", "esp_lcd", "esp_local_ctrl", "esp_mm", "esp_netif", "esp_netif_stack", "esp_partition", "esp_phy", "esp_pm", "esp_psram", "esp_ringbuf", "esp_rom", "esp_system", "esp_timer", "esp_wifi", "espcoredump", "esptool_py", "fatfs", "freertos", "hal", "heap", "http_parser", "idf_test", "ieee802154", "json", "log", "lwip", "main", "mbedtls", "mqtt", "newlib", "nvs_flash", "nvs_sec_provider", "openthread", "partition_table", "perfmon", "protobuf-c", "protocomm", "pthread", "sdmmc", "soc", "spi_flash", "spiffs", "tcp_transport", "ulp", "unity", "usb", "vfs", "wear_levelling", "wifi_provisioning", "wpa_supplicant", "xtensa", "" ],
+    "build_component_paths" : [ "C:/esp/idf/esp-idf/components/app_trace", "C:/esp/idf/esp-idf/components/app_update", "C:/esp/idf/esp-idf/components/bootloader", "C:/esp/idf/esp-idf/components/bootloader_support", "C:/esp/idf/esp-idf/components/bt", "C:/esp/idf/esp-idf/components/cmock", "D:/project/esp/ESP32_MQTT/components/connect", "C:/esp/idf/esp-idf/components/console", "C:/esp/idf/esp-idf/components/cxx", "C:/esp/idf/esp-idf/components/driver", "C:/esp/idf/esp-idf/components/efuse", "C:/esp/idf/esp-idf/components/esp-tls", "C:/esp/idf/esp-idf/components/esp_adc", "C:/esp/idf/esp-idf/components/esp_app_format", "C:/esp/idf/esp-idf/components/esp_bootloader_format", "C:/esp/idf/esp-idf/components/esp_coex", "C:/esp/idf/esp-idf/components/esp_common", "C:/esp/idf/esp-idf/components/esp_eth", "C:/esp/idf/esp-idf/components/esp_event", "C:/esp/idf/esp-idf/components/esp_gdbstub", "C:/esp/idf/esp-idf/components/esp_hid", "C:/esp/idf/esp-idf/components/esp_http_client", "C:/esp/idf/esp-idf/components/esp_http_server", "C:/esp/idf/esp-idf/components/esp_https_ota", "C:/esp/idf/esp-idf/components/esp_https_server", "C:/esp/idf/esp-idf/components/esp_hw_support", "C:/esp/idf/esp-idf/components/esp_lcd", "C:/esp/idf/esp-idf/components/esp_local_ctrl", "C:/esp/idf/esp-idf/components/esp_mm", "C:/esp/idf/esp-idf/components/esp_netif", "C:/esp/idf/esp-idf/components/esp_netif_stack", "C:/esp/idf/esp-idf/components/esp_partition", "C:/esp/idf/esp-idf/components/esp_phy", "C:/esp/idf/esp-idf/components/esp_pm", "C:/esp/idf/esp-idf/components/esp_psram", "C:/esp/idf/esp-idf/components/esp_ringbuf", "C:/esp/idf/esp-idf/components/esp_rom", "C:/esp/idf/esp-idf/components/esp_system", "C:/esp/idf/esp-idf/components/esp_timer", "C:/esp/idf/esp-idf/components/esp_wifi", "C:/esp/idf/esp-idf/components/espcoredump", "C:/esp/idf/esp-idf/components/esptool_py", "C:/esp/idf/esp-idf/components/fatfs", "C:/esp/idf/esp-idf/components/freertos", "C:/esp/idf/esp-idf/components/hal", "C:/esp/idf/esp-idf/components/heap", "C:/esp/idf/esp-idf/components/http_parser", "C:/esp/idf/esp-idf/components/idf_test", "C:/esp/idf/esp-idf/components/ieee802154", "C:/esp/idf/esp-idf/components/json", "C:/esp/idf/esp-idf/components/log", "C:/esp/idf/esp-idf/components/lwip", "D:/project/esp/ESP32_MQTT/main", "C:/esp/idf/esp-idf/components/mbedtls", "C:/esp/idf/esp-idf/components/mqtt", "C:/esp/idf/esp-idf/components/newlib", "C:/esp/idf/esp-idf/components/nvs_flash", "C:/esp/idf/esp-idf/components/nvs_sec_provider", "C:/esp/idf/esp-idf/components/openthread", "C:/esp/idf/esp-idf/components/partition_table", "C:/esp/idf/esp-idf/components/perfmon", "C:/esp/idf/esp-idf/components/protobuf-c", "C:/esp/idf/esp-idf/components/protocomm", "C:/esp/idf/esp-idf/components/pthread", "C:/esp/idf/esp-idf/components/sdmmc", "C:/esp/idf/esp-idf/components/soc", "C:/esp/idf/esp-idf/components/spi_flash", "C:/esp/idf/esp-idf/components/spiffs", "C:/esp/idf/esp-idf/components/tcp_transport", "C:/esp/idf/esp-idf/components/ulp", "C:/esp/idf/esp-idf/components/unity", "C:/esp/idf/esp-idf/components/usb", "C:/esp/idf/esp-idf/components/vfs", "C:/esp/idf/esp-idf/components/wear_levelling", "C:/esp/idf/esp-idf/components/wifi_provisioning", "C:/esp/idf/esp-idf/components/wpa_supplicant", "C:/esp/idf/esp-idf/components/xtensa", "" ],
     "build_component_info" : {
         "app_trace": {
             "alias": "idf::app_trace",
@@ -117,6 +117,21 @@
             "file": "D:/project/esp/ESP32_MQTT/build/esp-idf/cmock/libcmock.a",
             "sources": [ "C:/esp/idf/esp-idf/components/cmock/CMock/src/cmock.c" ],
             "include_dirs": [ "CMock/src" ]
+        },
+        "connect": {
+            "alias": "idf::connect",
+            "target": "___idf_connect",
+            "prefix": "idf",
+            "dir": "D:/project/esp/ESP32_MQTT/components/connect",
+            "type": "LIBRARY",
+            "lib": "__idf_connect",
+            "reqs": [],
+            "priv_reqs": [ "esp_netif", "esp_wifi" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "D:/project/esp/ESP32_MQTT/build/esp-idf/connect/libconnect.a",
+            "sources": [ "D:/project/esp/ESP32_MQTT/components/connect/connect.c" ],
+            "include_dirs": [ "include" ]
         },
         "console": {
             "alias": "idf::console",
@@ -2117,6 +2132,18 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "." ]
+        },
+        "connect": {
+            "alias": "idf::connect",
+            "target": "___idf_connect",
+            "prefix": "idf",
+            "dir": "D:/project/esp/ESP32_MQTT/components/connect",
+            "lib": "__idf_connect",
+            "reqs": [],
+            "priv_reqs": [ "esp_netif", "esp_wifi" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "include_dirs": [ "include" ]
         }
     },
     "debug_prefix_map_gdbinit": ""

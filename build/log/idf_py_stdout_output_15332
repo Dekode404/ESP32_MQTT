@@ -1,0 +1,5 @@
+[1/4] cmd.exe /C "cd /D D:\project\esp\ESP32_MQTT\build\esp-idf\esptool_py && c:\esp\tools\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/esp/idf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/project/esp/ESP32_MQTT/build/partition_table/partition-table.bin D:/project/esp/ESP32_MQTT/build/ESP32_MQTT.bin"
+ESP32_MQTT.bin binary size 0xbc9b0 bytes. Smallest app partition is 0x100000 bytes. 0x43650 bytes (26%) free.
+[2/4] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\project\esp\ESP32_MQTT\build\bootloader\esp-idf\esptool_py && c:\esp\tools\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/esp/idf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/project/esp/ESP32_MQTT/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6850 bytes. 0x7b0 bytes (7%) free.

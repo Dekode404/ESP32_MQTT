@@ -417,3 +417,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("D:/project/esp/ESP32_MQTT/build/esp-idf/main/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("D:/project/esp/ESP32_MQTT/build/esp-idf/connect/cmake_install.cmake")
+endif()
+

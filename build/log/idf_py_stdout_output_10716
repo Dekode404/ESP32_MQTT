@@ -1,0 +1,67 @@
+[1/5] cmd.exe /C "cd /D D:\project\esp\ESP32_MQTT\build\esp-idf\esptool_py && c:\esp\tools\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/esp/idf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/project/esp/ESP32_MQTT/build/partition_table/partition-table.bin D:/project/esp/ESP32_MQTT/build/ESP32_MQTT.bin"
+ESP32_MQTT.bin binary size 0xbc9b0 bytes. Smallest app partition is 0x100000 bytes. 0x43650 bytes (26%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\project\esp\ESP32_MQTT\build\bootloader\esp-idf\esptool_py && c:\esp\tools\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/esp/idf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/project/esp/ESP32_MQTT/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6850 bytes. 0x7b0 bytes (7%) free.
+[2/3] cmd.exe /C "cd /D C:\esp\idf\esp-idf\components\esptool_py && C:\esp\tools\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/esp/idf/esp-idf -D esptool.py --chip esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 ESP32_MQTT.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM3
+Connecting.........
+Chip is ESP32-D0WDQ6 (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 0c:b8:15:c2:30:b0
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000ccfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26704 bytes to 16373...
+Writing at 0x00001000... (100 %)
+Wrote 26704 bytes (16373 compressed) at 0x00001000 in 0.8 seconds (effective 261.5 kbit/s)...
+Hash of data verified.
+Compressed 772528 bytes to 486847...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001ca2d... (6 %)
+Writing at 0x00024a37... (10 %)
+Writing at 0x0002985d... (13 %)
+Writing at 0x00035104... (16 %)
+Writing at 0x0003b1ee... (20 %)
+Writing at 0x00040c81... (23 %)
+Writing at 0x000464fb... (26 %)
+Writing at 0x0004c063... (30 %)
+Writing at 0x00051e4d... (33 %)
+Writing at 0x000579ed... (36 %)
+Writing at 0x0005cbb7... (40 %)
+Writing at 0x00062080... (43 %)
+Writing at 0x00067563... (46 %)
+Writing at 0x0006c988... (50 %)
+Writing at 0x0007203f... (53 %)
+Writing at 0x000777a8... (56 %)
+Writing at 0x0007d6ed... (60 %)
+Writing at 0x00082fa2... (63 %)
+Writing at 0x00088b51... (66 %)
+Writing at 0x0008e8c4... (70 %)
+Writing at 0x000940e2... (73 %)
+Writing at 0x00099e17... (76 %)
+Writing at 0x000a04b1... (80 %)
+Writing at 0x000a5ee7... (83 %)
+Writing at 0x000ab717... (86 %)
+Writing at 0x000b5535... (90 %)
+Writing at 0x000bcb37... (93 %)
+Writing at 0x000c30df... (96 %)
+Writing at 0x000c8905... (100 %)
+Wrote 772528 bytes (486847 compressed) at 0x00010000 in 11.2 seconds (effective 552.3 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 362.3 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+SERIAL_TOOL=c:/esp/tools/python_env/idf5.2_py3.11_env/Scripts/python.exe;;C:/esp/idf/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/project/esp/ESP32_MQTT/build -P C:/esp/idf/esp-idf/components/esptool_py/run_serial_tool.cmake"

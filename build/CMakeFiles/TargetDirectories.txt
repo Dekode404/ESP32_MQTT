@@ -635,3 +635,10 @@ D:/project/esp/ESP32_MQTT/build/esp-idf/main/CMakeFiles/list_install_components.
 D:/project/esp/ESP32_MQTT/build/esp-idf/main/CMakeFiles/install.dir
 D:/project/esp/ESP32_MQTT/build/esp-idf/main/CMakeFiles/install/local.dir
 D:/project/esp/ESP32_MQTT/build/esp-idf/main/CMakeFiles/install/strip.dir
+D:/project/esp/ESP32_MQTT/build/esp-idf/connect/CMakeFiles/__idf_connect.dir
+D:/project/esp/ESP32_MQTT/build/esp-idf/connect/CMakeFiles/edit_cache.dir
+D:/project/esp/ESP32_MQTT/build/esp-idf/connect/CMakeFiles/rebuild_cache.dir
+D:/project/esp/ESP32_MQTT/build/esp-idf/connect/CMakeFiles/list_install_components.dir
+D:/project/esp/ESP32_MQTT/build/esp-idf/connect/CMakeFiles/install.dir
+D:/project/esp/ESP32_MQTT/build/esp-idf/connect/CMakeFiles/install/local.dir
+D:/project/esp/ESP32_MQTT/build/esp-idf/connect/CMakeFiles/install/strip.dir
