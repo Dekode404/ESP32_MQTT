@@ -12,7 +12,7 @@
 #define AWS_IOT_TASK_PRIORITY 5
 #define AWS_IOT_TASK_CORE_ID 1
 
-#define CONFIG_AWS_EXAMPLE_CLIENT_ID "Udemy_ESP32_Test"
+#define CONFIG_AWS_EXAMPLE_CLIENT_ID "ESP32_Test"
 /**
  * Starts AWS IoT task.
  */
